@@ -61,11 +61,31 @@ const App: React.FunctionComponent = () => (
         <Menu appPages={appPages} />
         <IonPage id='main'>
           <IonRouterOutlet>
-            <Route path='/home' component={Home} exact={true} />
-            <Route path='/list' component={List} exact={true} />
-            <Route path='/projects' component={Projects} exact={true} />
-            <Route path='/calendar' component={CalendarPage} exact={true} />
-            <Route exact path='/' render={() => <Redirect to='/home' />} />
+            <Route
+              path={`${process.env.PUBLIC_URL}/home`}
+              component={Home}
+              exact={true}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/list`}
+              component={List}
+              exact={true}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/projects`}
+              component={Projects}
+              exact={true}
+            />
+            <Route
+              path={`${process.env.PUBLIC_URL}/calendar`}
+              component={CalendarPage}
+              exact={true}
+            />
+            <Route
+              exact
+              path='/'
+              render={() => <Redirect to={`${process.env.PUBLIC_URL}/home`} />}
+            />
           </IonRouterOutlet>
         </IonPage>
       </IonSplitPane>
