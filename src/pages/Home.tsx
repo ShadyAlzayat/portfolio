@@ -33,7 +33,7 @@ const HomePage: React.FunctionComponent = () => {
       {/* </IonHeader> */}
       <IonContent>
         <IonCard className='welcome-card'>
-          <img src={`${process.env.PUBLIC_URL}/assets/shapes.svg`} alt='' />
+          <img src={'/assets/shapes.svg'} alt='' />
           <IonCardHeader>
             <IonCardSubtitle>Hi!</IonCardSubtitle>
             <IonCardTitle>I'm Shady Alzayat</IonCardTitle>

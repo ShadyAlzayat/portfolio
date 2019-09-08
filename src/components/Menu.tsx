@@ -28,7 +28,7 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
         <IonAvatar className='profile-photo'>
           <img
             className='profile-photo'
-            src={`${process.env.PUBLIC_URL}/assets/profilePhoto.jpg`}
+            src='/assets/profilePhoto.jpg'
             alt=''
           />
         </IonAvatar>

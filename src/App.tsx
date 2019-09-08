@@ -29,7 +29,6 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import CalendarPage from './pages/Calendar';
 
 const appPages: AppPage[] = [
   {
@@ -56,36 +55,16 @@ const appPages: AppPage[] = [
 
 const App: React.FunctionComponent = () => (
   <IonApp>
-    <IonReactRouter>
+    <IonReactRouter basename={`${process.env.PUBLIC_URL}`}>
       <IonSplitPane contentId='main'>
         <Menu appPages={appPages} />
         <IonPage id='main'>
           <IonRouterOutlet>
-            <Route
-              path={`${process.env.PUBLIC_URL}/home`}
-              component={Home}
-              exact={true}
-            />
-            <Route
-              path={`${process.env.PUBLIC_URL}/list`}
-              component={List}
-              exact={true}
-            />
-            <Route
-              path={`${process.env.PUBLIC_URL}/projects`}
-              component={Projects}
-              exact={true}
-            />
-            <Route
-              path={`${process.env.PUBLIC_URL}/calendar`}
-              component={CalendarPage}
-              exact={true}
-            />
-            <Route
-              exact
-              path='/'
-              render={() => <Redirect to={`${process.env.PUBLIC_URL}/home`} />}
-            />
+            <Route path='/home' component={Home} exact={true} />
+            <Route path='/list' component={List} exact={true} />
+            <Route path='/projects' component={Projects} exact={true} />
+            <Route path='/calendar' component={Calendar} exact={true} />
+            <Route exact path='/' render={() => <Redirect to='/home' />} />
           </IonRouterOutlet>
         </IonPage>
       </IonSplitPane>
