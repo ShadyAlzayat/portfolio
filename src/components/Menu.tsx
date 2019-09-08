@@ -12,7 +12,7 @@ import {
   IonAvatar,
   IonButton
 } from '@ionic/react';
-import { logoLinkedin, logoGithub } from 'ionicons/icons';
+import { logoLinkedin, logoGithub, mail } from 'ionicons/icons';
 import React from 'react';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
 import { AppPage } from '../declarations';
@@ -35,8 +35,7 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
         <IonTitle>Shady Alzayat</IonTitle>
       </IonToolbar>
     </IonHeader>
-
-    <IonContent>
+    <IonContent className='ion-text-center'>
       <IonList>
         {appPages.map((appPage, index) => {
           return (
@@ -53,24 +52,36 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
           );
         })}
       </IonList>
-    </IonContent>
+      <br />
 
-    <IonButton
-      onClick={() =>
-        window.open('https://www.linkedin.com/in/shadyalzayat/', '_system')
-      }
-      fill='clear'
-      size='small'
-    >
-      <IonIcon slot='icon-only' icon={logoLinkedin} />
-    </IonButton>
-    <IonButton
-      onClick={() => window.open('https://github.com/shadyalzayat', '_system')}
-      fill='clear'
-      size='small'
-    >
-      <IonIcon slot='icon-only' icon={logoGithub} />
-    </IonButton>
+      <IonButton
+        onClick={() =>
+          window.open('https://www.linkedin.com/in/shadyalzayat/', '_system')
+        }
+        fill='clear'
+        size='small'
+      >
+        <IonIcon slot='icon-only' icon={logoLinkedin} />
+      </IonButton>
+      <br />
+      <IonButton
+        onClick={() =>
+          window.open('https://github.com/shadyalzayat', '_system')
+        }
+        fill='clear'
+        size='small'
+      >
+        <IonIcon slot='icon-only' icon={logoGithub} />
+      </IonButton>
+      <br />
+      <IonButton
+        onClick={() => window.open('mailto:emailshady@gmail.com', '_self')}
+        fill='clear'
+        size='small'
+      >
+        <IonIcon slot='icon-only' icon={mail} />
+      </IonButton>
+    </IonContent>
   </IonMenu>
 );
 

@@ -27,7 +27,7 @@ const CalendarPage: React.FunctionComponent = () => {
           <div
             className='calendly-inline-widget'
             data-url='https://calendly.com/shadyalzayat'
-            style={{ minWidth: '320px', height: '580px' }}
+            style={{ minWidth: '80vw', height: '90vh' }}
           />
         </div>
       </IonContent>
