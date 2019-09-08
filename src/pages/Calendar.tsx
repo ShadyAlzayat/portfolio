@@ -1,4 +1,11 @@
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/react';
+import {
+  IonContent,
+  IonHeader,
+  IonButtons,
+  IonMenuButton,
+  IonTitle,
+  IonToolbar
+} from '@ionic/react';
 
 import React, { useEffect } from 'react';
 
@@ -18,6 +25,9 @@ const CalendarPage: React.FunctionComponent = () => {
     <>
       <IonHeader>
         <IonToolbar>
+          <IonButtons slot='start'>
+            <IonMenuButton />
+          </IonButtons>
           <IonTitle>Calendar</IonTitle>
         </IonToolbar>
       </IonHeader>
