@@ -32,7 +32,7 @@ const Menu: React.FunctionComponent<MenuProps> = ({ appPages }) => (
             alt=''
           />
         </IonAvatar>
-        <IonTitle>Shady Alzayat</IonTitle>
+        <IonTitle className='ion-padding-bottom'>Shady Alzayat</IonTitle>
       </IonToolbar>
     </IonHeader>
     <IonContent className='ion-text-center'>

@@ -1,27 +1,31 @@
 {
-  "name": "ShadyAlzayat",
+  "name": "portfolio",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://shadyalzayat.github.io/portfolio",
   "dependencies": {
-    "@ionic/react": "4.8.0-rc.0",
-    "@ionic/react-router": "4.8.0-rc.0",
-    "@types/jest": "24.0.11",
-    "@types/node": "11.11.3",
-    "@types/react": "16.9.1",
-    "@types/react-dom": "16.8.5",
+    "@ionic/react": "4.8.0-rc.1",
+    "@ionic/react-router": "4.8.0-rc.1",
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.4",
+    "@types/react": "16.9.2",
+    "@types/react-dom": "16.9.0",
     "@types/react-router": "5.0.3",
-    "@types/react-router-dom": "4.3.1",
-    "ionicons": "4.6.2",
+    "@types/react-router-dom": "4.3.5",
+    "gh-pages": "2.1.1",
+    "ionicons": "4.6.3",
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-router": "5.0.1",
     "react-router-dom": "5.0.1",
-    "react-scripts": "3.1.0",
-    "typescript": "3.5.3"
+    "react-scripts": "3.1.1",
+    "typescript": "3.6.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -34,5 +38,5 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "description": "An Ionic project"
+  "description": "Shady Alzayat"
 }
