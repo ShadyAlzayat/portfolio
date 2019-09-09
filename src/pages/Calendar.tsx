@@ -33,6 +33,9 @@ const CalendarPage: React.FunctionComponent = () => {
       </IonHeader>
 
       <IonContent>
+        <h6 className='ion-text-center'>
+          Shedule a meeting by making a selecting below.
+        </h6>
         <div id='schedule_form'>
           <div
             className='calendly-inline-widget'
