@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect, Route } from 'react-router-dom';
+import { Redirect, Route, HashRouter } from 'react-router-dom';
 import { IonApp, IonPage, IonSplitPane } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { AppPage } from './declarations';
@@ -56,7 +56,7 @@ const appPages: AppPage[] = [
 const App: React.FunctionComponent = () => (
   <IonApp>
     {/* <IonReactRouter basename={`${process.env.PUBLIC_URL}`}> */}
-    <IonReactRouter>
+    <HashRouter>
       <IonSplitPane contentId='main'>
         <Menu appPages={appPages} />
         <IonPage id='main'>
@@ -67,7 +67,7 @@ const App: React.FunctionComponent = () => (
           <Route exact path='/' render={() => <Redirect to='/home' />} />
         </IonPage>
       </IonSplitPane>
-    </IonReactRouter>
+    </HashRouter>
   </IonApp>
 );
 
