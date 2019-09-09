@@ -33,22 +33,22 @@ import './theme/variables.css';
 const appPages: AppPage[] = [
   {
     title: 'Home',
-    url: '/home',
+    url: '#/home',
     icon: home
   },
   {
     title: 'List',
-    url: '/list',
+    url: '#/list',
     icon: list
   },
   {
     title: 'Projects',
-    url: '/projects',
+    url: '#/projects',
     icon: desktop
   },
   {
     title: 'Calendar',
-    url: '/calendar',
+    url: '#/calendar',
     icon: calendar
   }
 ];
@@ -56,7 +56,7 @@ const appPages: AppPage[] = [
 const App: React.FunctionComponent = () => (
   <IonApp>
     {/* <IonReactRouter basename={`${process.env.PUBLIC_URL}`}> */}
-    <HashRouter basename='/#'>
+    <HashRouter>
       <IonSplitPane contentId='main'>
         <Menu appPages={appPages} />
         <IonPage id='main'>
