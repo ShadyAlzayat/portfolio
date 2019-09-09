@@ -56,7 +56,7 @@ const appPages: AppPage[] = [
 const App: React.FunctionComponent = () => (
   <IonApp>
     {/* <IonReactRouter basename={`${process.env.PUBLIC_URL}`}> */}
-    <IonReactRouter basename='/'>
+    <IonReactRouter>
       <IonSplitPane contentId='main'>
         <Menu appPages={appPages} />
         <IonPage id='main'>
