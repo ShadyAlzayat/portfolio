@@ -1,14 +1,14 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f1feb7922a437fbedd9b4fa6d7725781",
+    "revision": "72c8ba94aca1fd3d31fb2b5b6cd4d66b",
     "url": "/shadyalzayat.github.io/index.html"
   },
   {
-    "revision": "6452b3ff600b4e78c109",
+    "revision": "dfa8e0f1b4ade2828574",
     "url": "/shadyalzayat.github.io/static/css/10.38a9fbfa.chunk.css"
   },
   {
-    "revision": "cb2b79fa74ea6e1e9337",
+    "revision": "67eaf8ec2b1ba3d629d5",
     "url": "/shadyalzayat.github.io/static/css/main.b67cba5b.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shadyalzayat.github.io/static/js/1.37a6fdbb.chunk.js"
   },
   {
-    "revision": "6452b3ff600b4e78c109",
-    "url": "/shadyalzayat.github.io/static/js/10.a3e7df86.chunk.js"
+    "revision": "dfa8e0f1b4ade2828574",
+    "url": "/shadyalzayat.github.io/static/js/10.ab352b5f.chunk.js"
   },
   {
     "revision": "fa135766276f1b4d2eae",
@@ -408,8 +408,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shadyalzayat.github.io/static/js/99.7d2dbeb6.chunk.js"
   },
   {
-    "revision": "cb2b79fa74ea6e1e9337",
-    "url": "/shadyalzayat.github.io/static/js/main.4edac3bd.chunk.js"
+    "revision": "67eaf8ec2b1ba3d629d5",
+    "url": "/shadyalzayat.github.io/static/js/main.e4f50f5f.chunk.js"
   },
   {
     "revision": "7f69cf88640588f09054",
